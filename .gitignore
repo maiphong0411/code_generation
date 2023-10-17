@@ -1,0 +1,9 @@
+checkpoint_qa/
+checkpoints_09/
+vietai-nlp03-assignment-2.ipynb
+data/
+evaluation/
+data_preprocessing.py
+__pycache__
+*.json
+test.py
