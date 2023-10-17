@@ -5,5 +5,7 @@ data/
 evaluation/
 data_preprocessing.py
 __pycache__
-*.json
+test_data.json
+train.json
+predict_data_qa.json
 test.py
