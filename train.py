@@ -331,7 +331,7 @@ if __name__ == "__main__":
         # print("No data for training")
     size_valid_set = 0.3
     max_length = 512
-    num_epochs = 5
+    num_epochs = 10
     batch_size = 1
     gradient_accumulation_steps = 16
 
