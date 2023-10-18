@@ -346,8 +346,8 @@ if __name__ == "__main__":
         download_from_driver(path=DRIVER_DATA_PATH, location_path=data_path)
         # print("No data for training")
     size_valid_set = 0.3
-    max_length = 544
-    num_epochs = 10
+    max_length = 512
+    num_epochs = 1
     batch_size = 1
     gradient_accumulation_steps = 16
 
