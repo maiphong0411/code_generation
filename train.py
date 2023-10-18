@@ -335,7 +335,7 @@ def load_pretrained_model(local_rank, model_path: str = ""):
 if __name__ == "__main__":
     OUTPUT_DIR = "checkpoints/"
     # data alpaca 20k 
-    DRIVER_DATA_PATH = 'https://drive.google.com/file/d/1Y0Gf8pSpjZAV2fbQMXqk0CfeMykj6pjc/view?usp=sharing'
+    DRIVER_DATA_PATH = 'https://drive.google.com/file/d/1oeKm2bmle8A9RL1-u5EAnByVZtxpBeGM/view?usp=sharing'
 
     backend = "nccl"
     model_path = 'bigscience/bloom-1b7'
