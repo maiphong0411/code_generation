@@ -263,6 +263,17 @@ class Trainer:
 
 
 def load_tokenizer_from_pretrained_model(model_path):
+    """
+    Load a tokenizer from a pretrained model.
+    Args:
+        model_path (str): The path to the pretrained model.
+    Returns:
+        tokenizer (Tokenizer): The loaded tokenizer.
+    Raises:
+        None.
+    Examples:
+        >>> tokenizer = load_tokenizer_from_pretrained_model('path/to/model')
+    """
 
     config = AutoConfig.from_pretrained(model_path)
     architecture = config.architectures[0]
@@ -288,6 +299,11 @@ def load_tokenizer_from_pretrained_model(model_path):
 
 
 def _is_master_process():
+    """
+    Check if the current process is the master process.
+    Returns:
+        bool: True if the current process is the master process, False otherwise.
+    """
     ddp_rank = int(os.environ['RANK'])
     return ddp_rank == 0
 
