@@ -335,7 +335,7 @@ def load_pretrained_model(local_rank, model_path: str = ""):
 if __name__ == "__main__":
     OUTPUT_DIR = "checkpoints/"
     # data alpaca 20k 
-    DRIVER_DATA_PATH = 'https://drive.google.com/file/d/1FI_Hiq4qGZ4KNBD6SadoavlFTjI5bDl6/view?usp=sharing'
+    DRIVER_DATA_PATH = 'https://drive.google.com/file/d/1Y0Gf8pSpjZAV2fbQMXqk0CfeMykj6pjc/view?usp=sharing'
 
     backend = "nccl"
     model_path = 'bigscience/bloom-1b7'
@@ -346,7 +346,7 @@ if __name__ == "__main__":
         download_from_driver(path=DRIVER_DATA_PATH, location_path=data_path)
         # print("No data for training")
     size_valid_set = 0.3
-    max_length = 512
+    max_length = 544
     num_epochs = 10
     batch_size = 1
     gradient_accumulation_steps = 16
