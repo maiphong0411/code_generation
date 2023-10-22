@@ -1,0 +1,2 @@
+print("hello world")
+if True: print(1)
